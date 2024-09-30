@@ -8,78 +8,88 @@
       body {
         margin: 0;
       }
-
-      .main-circle {
-        width: 250px;
-        height: 250px;
-        /* background-color: red; */
-        border-radius: 60%;
-        border: 10px solid gray;
+      .container {
         position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        width: 100%;
+        height: 100vh;
       }
-
-      .circle1 {
+      .circle-1{
         width: 230px;
         height: 230px;
-        /* background-color: white; */
-        border: 10px solid red;
         border-radius: 50%;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .container {
-        width: 100vw;
-        height: 100vh;
+        border: 40px solid grey;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        z-index: 1;
       }
-     .container .hello{
+      .circle-2 {
         width: 230px;
         height: 230px;
-        border-radius: 60%;
-        background-color: purple;
-        position: relative;
-        
-        transform: translate(50%, 50%);
-      }
-      .hello p{
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 41%;
+        border-radius: 50%;
+        border: 20px solid red;
+        position: fixed;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1;
       }
-      .welcom{
-        margin-top: 100vh;
+
+      .mid-circle {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+      .mid-circle p {
+        margin: 0;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .purple-Circle {
+        background-color: purple;
+      }
+
+      .aqua-Circle {
+        background-color: rgb(13, 193, 187);
+      }
+
+      .red-Circle {
+        background-color: rgb(249, 113, 113);
       }
       
     </style>
   </head>
   <body>
     <div class="container">
-        <div class="main-circle">
-          <div class="circle1"></div>
-        </div>
-      <div class="hello">
+      <div class="circle-1">
+        <div class="circle-2"></div>
+      </div>
+      <div class="mid-circle purple-Circle">
         <p>Hello</p>
       </div>
     </div>
-
-    
-
-    <div class="welcom">
-      <p>Welcom</p>
+    <div class="container">
+      <div class="mid-circle aqua-Circle">
+        <p>Welcome to</p>
+      </div>
     </div>
+    <div class="container">
+      <div class="mid-circle red-Circle">
+        <p>Institude of software Engineering</p>
+      </div>
+    </div>
+  </body>
     
     
   </body>

@@ -8,102 +8,89 @@
         body{
             margin: 0;
         }
-.page{
-    display: flex;
-    flex-direction: column;
-}        
-.hello{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
+.card-1, 
+.card-2,
+.card-3, 
+.card-4{
     position: relative;
-    
-
-}
-.hello1{
     width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    position: absolute;
-    
-
+    height: 100vh;
 }
- .card1{
+.card-bar-1,
+.card-bar-2,
+.card-bar-3,
+.card-bar-4{
     width: 100%;
-    height: 40px;
-    font-size: 20px;
-    background-color: red;
+    height: 50px;
     color: white;
-    display: flex;
-    align-items: center;
     position: sticky;
     top: 0;
-    bottom: 100px;
+    left: 0;
     z-index: 1;
 
- }
-.card2{
-    width: 100%;
-    height: 40px;
-    font-size: 20px;
-    background-color: blue;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    bottom: 100px;
-    z-index: 2;
 }
-.card3{
-    width: 100%;
-    height: 30px;
-    font-size: 20px;
+.card-bar-1{
+    background-color: red;
+}
+.card-bar-2{
     background-color: green;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    bottom: 100px;
-    z-index: 3;
 }
-.card4{
-    width: 100%;
-    height: 30px;
-    font-size: 20px;
-    background-color: yellow;
-    color: white;
-    display: flex;
+.card-bar-3{
+    background-color: orange;
 }
+.card-bar-4{
+    background-color: purple;
+}   
+.text {
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        padding-left: 10px;
+        font-size: 20px;
+}
+
+p{
+        margin: 0;
+        font-size: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
 
     </style>
 </head>
 <body>
-    <div class="page">
-        <div class="card1">Card 1</div>
-        <div class="hello">
-            Hello
+    <div class="card-1">
+        <div class="card-bar-1">
+          <div class="text">Card 1</div>
         </div>
-    </div>
-        
+        <p>Hello</p>
+      </div>
 
-        <div class="card2">Card 2</div>
-        <div class="hello1">
-            How
+      <div class="card-2">
+        <div class="card-bar-2">
+          <div class="text">Card 2</div>
         </div>
+        <p>How</p>
+      </div>
 
-        <!-- <div class="card3">Card 3</div>
-        <div class="hello">Are</div>
+      <div class="card-3">
+        <div class="card-bar-3">
+          <div class="text">Card 3</div>
+        </div>
+        <p>Are</p>
+      </div>
 
-        <div class="card4">Card 4</div>
-        <div class="hello">You</div> -->
+      <div class="card-4">
+        <div class="card-bar-4">
+          <div class="text">Card 4</div>
+        </div>
+        <p>You...?</p>
+      </div>
 
 </body>
 </html>
