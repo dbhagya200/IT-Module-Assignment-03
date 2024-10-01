@@ -15,7 +15,7 @@ body{
     height: 420px;
     font-size: 30px;
     margin-left: 210px;
-    margin-top: 30px;
+    margin-top: 15px;
     border: 2px solid white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,6 +42,7 @@ body{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
+
 a{
     text-decoration: none;
     color: gold;
@@ -49,8 +50,17 @@ a{
 .box:hover{
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background:linear-gradient(to right, darkblue, white);
+    color: cyan;
+    border: 2px solid cyan;
+    
 }
 h2{
     margin-left: 100px;
     margin-top: 30px;
+}
+.footer{
+    text-align: center;
+    font-family:  "Merienda", cursive;
+    font-size: 15px;
 }
